@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5Sg-tE-qDN">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="o5Q-ox-ZEz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ebL-pw-idE">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="S16-uB-Cme" kind="push" id="v2G-qR-Cap"/>
+                        <segue destination="GYD-D4-Oga" kind="push" id="B83-Gh-IT8"/>
+                        <segue destination="LE0-zz-nA3" kind="push" id="1rW-nG-Cjc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fff-vG-Pi1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="797"/>
+        </scene>
+        <!--Sample Game-->
+        <scene sceneID="qa6-eY-SMj">
+            <objects>
+                <viewController storyboardIdentifier="jbfSample" id="GYD-D4-Oga" customClass="SampleGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Oq-Se-40S" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Sample Game" id="xcx-iA-xJ4">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="x87-sq-Fum">
+                            <connections>
+                                <action selector="showMenu:" destination="GYD-D4-Oga" id="XAU-Uc-Qft"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aop-E5-OdC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-325" y="1360"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1H4-SM-f8V">
+            <objects>
+                <viewController storyboardIdentifier="jbfFridge" useStoryboardIdentifierAsRestorationIdentifier="YES" id="S16-uB-Cme" customClass="HomeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7Dk-cd-0U2" customClass="HomeView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Screen" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dOo-QV-7kS">
+                                <rect key="frame" x="108" y="80" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="check menu to access sample game" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yOk-fZ-Pqa">
+                                <rect key="frame" x="10" y="126" width="281" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Home" id="J9P-tB-dYS">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="3fu-I3-PS3">
+                            <connections>
+                                <action selector="showMenu:" destination="S16-uB-Cme" id="7fN-eb-xnl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GO1-mH-DU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="797"/>
+        </scene>
+        <!--Game Title Here-->
+        <scene sceneID="qV2-bl-a2z">
+            <objects>
+                <viewController restorationIdentifier="jbfDeveloperGame" storyboardIdentifier="jbfDeveloperGame" id="LE0-zz-nA3" customClass="DeveloperGameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HmQ-JX-Gnu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Game Title Here" id="OCZ-xs-4SN">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="IlN-R7-aMm">
+                            <connections>
+                                <action selector="showMenu:" destination="LE0-zz-nA3" id="U1S-Ac-xon"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSn-Re-TWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="44" y="1360"/>
+        </scene>
+        <!--Sidebar View Controller-->
+        <scene sceneID="iaV-eJ-NV4">
+            <objects>
+                <viewController storyboardIdentifier="jbfSidebar" id="0rG-8X-WWO" customClass="SidebarViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zkd-6B-qel">
+                        <rect key="frame" x="0.0" y="0.0" width="260" height="730"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SidebarBackground" id="oXR-zV-jKN">
+                                <rect key="frame" x="0.0" y="0.0" width="260" height="732"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="m0Q-lx-zFg">
+                                <rect key="frame" x="0.0" y="86" width="260" height="646"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="vho-n6-Fal">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="646"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CTB-Vw-9HI">
+                                                <rect key="frame" x="20" y="70" width="280" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Home">
+                                                    <color key="titleColor" red="0.64285714289999996" green="0.15052407579999999" blue="0.1156163793" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showHome:" destination="0rG-8X-WWO" eventType="touchUpInside" id="T4u-xu-cBB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NHA-yt-6kV">
+                                                <rect key="frame" x="20" y="118" width="280" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Sample Game">
+                                                    <color key="titleColor" red="0.64285714289999996" green="0.15052407579999999" blue="0.1156163793" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showSample:" destination="0rG-8X-WWO" eventType="touchUpInside" id="uwe-Ik-ncf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="6YO-Jg-SEk">
+                                                <rect key="frame" x="20" y="166" width="280" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Pacman Hockey">
+                                                    <color key="titleColor" red="0.64285714289999996" green="0.15052407579999999" blue="0.1156163793" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showDeveloperGame:" destination="0rG-8X-WWO" eventType="touchUpInside" id="5c2-lE-5dY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dS3-qO-bBL">
+                                                <rect key="frame" x="20" y="214" width="280" height="40"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="Pacman Football">
+                                                    <color key="titleColor" red="0.64285714289999996" green="0.15052407579999999" blue="0.1156163793" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showFootballGame:" destination="0rG-8X-WWO" eventType="touchUpInside" id="jez-ec-Tbe"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="260" height="600"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="8Wc-nj-ASO"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="260" height="730"/>
+                    <connections>
+                        <outlet property="background" destination="oXR-zV-jKN" id="6ku-1K-wpl"/>
+                        <outlet property="scrollView" destination="m0Q-lx-zFg" id="7XF-4H-kuE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FAF-WF-JUW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-680" y="797"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MenuIcon" width="20" height="30"/>
+        <image name="SidebarBackground" width="257" height="481"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" red="0.98823535439999999" green="0.0" blue="0.13333334029999999" alpha="1" colorSpace="deviceRGB"/>
+</document>
